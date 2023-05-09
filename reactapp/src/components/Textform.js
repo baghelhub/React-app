@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 
 export default function Textform(props) {
 
-    
     const handleOnUpclick = () => {
         setText("Amit Here")
     }
