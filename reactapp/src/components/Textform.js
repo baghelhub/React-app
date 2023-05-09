@@ -17,12 +17,14 @@ export default function Textform(props) {
         <div>
 
             <div className="col-md-5">
-                <h1> {props.heading}</h1>
+                <h1> {props.head}</h1>
                 <form>
 
                     <div className="form-group">
                         <label htmlFor="exampleInputPassword1">Name</label>
+
                         <input type="text" className="form-control" value={text} onChange={textonchaneg} id="exampleInputPassword1" placeholder="enter the name" />
+
                     </div>
                     <button className="btn btn-primary" onClick={handleOnUpclick}>Convert to UpperCase</button>
                 </form>
