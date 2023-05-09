@@ -1,12 +1,13 @@
 
 import './App.css';
-import Navbar from './components/navbar';
+import Textform from './components/Textform';
+
 
 function App() {
 
        return (
          <>
-         < Navbar />
+         < Textform heading="Enter The Text Analyze" />
          </>
       );
   }
