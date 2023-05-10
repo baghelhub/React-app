@@ -27,7 +27,7 @@ export default function Textform(props) {
         setText(event.target.value)
     }
 
-    const [text, setText] = useState('You can this text click on button');
+    const [text, setText] = useState('If You want can change this text click on Button');
 
     return (
         <>
@@ -37,16 +37,16 @@ export default function Textform(props) {
                 <h3> {props.nextText}</h3>
 
                 <div className='mb-3'>
-                <textarea className='form-control' value={text} onChange={textonchaneg} id='myBox' rows='8'></textarea>
+                <textarea className='form-control' value={text} onChange={textonchaneg} id='myBox' bg-4 rows='8'></textarea>
                 </div>
-                <button className="btn btn-primary mx-1" onClick={ChangeText}>New Text</button>
-                <button className="btn btn-primary mx-1" onClick={touppercasetext}>Caps Text</button>
-                <button className="btn btn-primary mx-1" onClick={tolowercasetext}>lcase Text</button>
-                <button className="btn btn-primary mx-1" onClick={cleartext}>Clear</button>
+                <button className="btn btn-secondary mx-1" onClick={ChangeText}>New Text</button>
+                <button className="btn btn-success mx-1" onClick={touppercasetext}>Caps Text</button>
+                <button className="btn btn-warning mx-1" onClick={tolowercasetext}>lcase Text</button>
+                <button className="btn btn-info mx-1" onClick={cleartext}>Clear</button>
                
                </div>
                </div>
-               <div className='container my-5'>
+               <div className='container my-5' >
                  <h4>Your Summery Here</h4>
                  <p>{text.split(" ").length} words  {text.length} characters</p>
                  <p>{0.008 * text.split(" ").length} Minute Read</p>
