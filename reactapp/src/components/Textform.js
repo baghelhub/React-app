@@ -9,14 +9,19 @@ export default function Textform(props) {
     }
     const touppercasetext = () => {
 
-         let newtext = text.toUpperCase();
-         setText(newtext);
+         let utext = text.toUpperCase();
+         setText(utext);
     }
     const tolowercasetext = () => {
 
-         let newtext = text.toLowerCase();
-         setText(newtext);
+         let ltext = text.toLowerCase();
+         setText(ltext);
     }
+    const cleartext = () => {
+
+        let clstext = "";
+        setText(clstext);
+   }
 
     const textonchaneg = (event) => {
         setText(event.target.value)
@@ -34,9 +39,11 @@ export default function Textform(props) {
                 <div className='mb-3'>
                 <textarea className='form-control' value={text} onChange={textonchaneg} id='myBox' rows='8'></textarea>
                 </div>
-                <button className="btn btn-primary" onClick={ChangeText}>Change Text</button>
-                <button className="btn btn-primary" onClick={touppercasetext}>UpperCase Text</button>
-                <button className="btn btn-primary" onClick={tolowercasetext}>LowerCase Text</button>
+                <button className="btn btn-primary mx-1" onClick={ChangeText}>New Text</button>
+                <button className="btn btn-primary mx-1" onClick={touppercasetext}>Caps Text</button>
+                <button className="btn btn-primary mx-1" onClick={tolowercasetext}>lcase Text</button>
+                <button className="btn btn-primary mx-1" onClick={cleartext}>Clear</button>
+               
                </div>
                </div>
                <div className='container my-5'>
