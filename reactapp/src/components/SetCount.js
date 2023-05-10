@@ -10,9 +10,11 @@ export default function Example() {
       }
   return (
     <div>
+      <div class="container">
       <p>You clicked {count} times</p>
 
       <button onClick={setcount}> Click me </button>
+    </div>
     </div>
   );
 }
