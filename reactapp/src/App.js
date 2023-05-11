@@ -1,25 +1,38 @@
 
-import { React, useEffect } from 'react';
+import { React } from 'react';
 import './App.css';
+<<<<<<< HEAD
 //import About from './components/About';
 import Textform from './components/Textform';
 import Navbar from './components/Navbar';
+=======
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './components/Home';
+import Help from './components/Help';
+
+// import About from './components/About';
+// import Textform from './components/Textform';
+ import Navbar from './components/Navbar';
+>>>>>>> react2
 
 // new file import for use usestate hook
 //import SetCount from './components/SetCount';
 
+
 function App() {
 
-  useEffect(() => {
-
-    console.log('useeffect run on every effect');
-
-  })
 
   return (
     <>
       <Navbar />
-      < Textform head="Enter The Text Analyze" nextText="UseState Hook" />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/Help" element={<Help />}></Route>
+        </Routes>
+      </BrowserRouter>
+
+      {/* < Textform head="Enter The Text Analyze" nextText="UseState Hook" /> */}
       {/* < SetCount  /> */}
       {/* <About /> */}
     </>
