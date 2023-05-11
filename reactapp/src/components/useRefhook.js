@@ -6,7 +6,7 @@ import './App.css';
 // new file import for use usestate hook
 //import SetCount from './components/SetCount';
 
-function usefefhook() {
+function useRefhook() {
 
   const userefs = useRef(null);
   function handleInput(){
