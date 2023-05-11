@@ -1,5 +1,5 @@
 
-import { React, useEffect } from 'react';
+import { React} from 'react';
 import './App.css';
 // import About from './components/About';
 import Textform from './components/Textform';
@@ -10,11 +10,6 @@ import Navbar from './components/Navbar';
 
 function App() {
 
-  useEffect(() => {
-
-    console.log('useeffect run on every effect');
-
-  })
 
   return (
     <>
