@@ -10,7 +10,8 @@ import About from './components/About';
 
 function App() {
   return (
-    <>
+      <>
+      
       <Navbar />
 
       {/* < Textform  text="This Text is use with the help Props" /> */}
