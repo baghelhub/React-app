@@ -5,7 +5,7 @@ import './App.css';
 // new file import for use usestate hook
 //import SetCount from './components/SetCount';
 
-function useeffectusestate() {
+function App() {
 
     const [data, setData] = useState(0)
     const [count, SetCount] = useState(0)

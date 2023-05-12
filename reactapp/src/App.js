@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/navbar';
 //import SetCount from './components/SetCount';
 //import  Textform from './components/Textform';
-//import About  from './components/About';
+import About from './components/About';
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 //import Home from './components/Home';
 //import Help from './components/Help';
@@ -11,9 +11,11 @@ import Navbar from './components/navbar';
 function App() {
   return (
     <>
-    <Navbar />
-       {/* < Textform  text="This Text is use with the help Props" /> */}
-       {/* < SetCount /> */}
+      <Navbar />
+
+      {/* < Textform  text="This Text is use with the help Props" /> */}
+      {/* < SetCount /> */}
+      <About />
 
       {/* <BrowserRouter>
         <Navbar />
@@ -31,4 +33,6 @@ function App() {
     </>
   );
 }
+
+
 export default App;

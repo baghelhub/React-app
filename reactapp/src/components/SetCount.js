@@ -1,22 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export default function Example() {    
+export default function Example() {
 
   // Declare a new state variable, which we'll call "count"
   const [count, setCount] = useState(0);
 
-  function countupdate()  {
-       setCount(count + 1)
-      }
+  function countupdate() {
+    setCount(count + 1)
+  }
+
+  //use effect hook
+  useEffect(() => {
+
+
+    console.log('effect work successfully');
+
+  }, [count])
 
   return (
 
     <div>
-      <div class="container">
-      <p>Button  clicked  Count =  {count} times</p>
+      <div className="container">
+        <p>Button  clicked  Count =  {count} times</p>
 
-      <button className='btn btn-success' onClick={countupdate}> Click me </button>
-    </div>
+        <button className='btn btn-success' onClick={countupdate}> Click me </button>
+      </div>
     </div>
   );
 }

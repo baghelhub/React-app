@@ -1,35 +1,43 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 
 
 export default function About() {
 
+    //Set default color for background
     const [styles, setStyles] = useState({
         color: 'black',
         backgroundColor: "white"
     })
 
-  let   darkmodeColor = () => {
+    //use button text hook
+    const [buttonText, setButtonText] = useState('Enable Dark Mode');
+
+
+    //function click
+    let darkmodeColor = () => {
 
         if (styles.color === 'black') {
+            setButtonText('Disable Dark Mode');
             setStyles({
                 color: 'white',
                 backgroundColor: "black",
                 border: '0.5px solid white'
             })
+
+
         } else {
+            setButtonText('Enable Dark Mode');
             setStyles({
                 color: 'black',
                 backgroundColor: "white"
-
             })
 
+
         }
-
-
     }
 
     return (
-        <div className='container' style={styles}>
+        <div className='container col-md-8' style={styles}>
             <h2 className='my-3'>About Us</h2>
             <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
@@ -71,9 +79,8 @@ export default function About() {
             </div>
 
             <div className='container my-3'>
-                <button className='btn btn-success' onClick={darkmodeColor}>Enable Dark Mode</button>
+                <button className='btn btn-success cus-about-cl' onClick={darkmodeColor}>{buttonText}</button>
             </div>
         </div>
-
     )
 }
