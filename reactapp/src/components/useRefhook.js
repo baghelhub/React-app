@@ -1,4 +1,6 @@
 
+//we want use this file code in app.js 
+
 import { React, useRef } from 'react';
 import './App.css';
 // import About from './components/About';
@@ -6,21 +8,18 @@ import './App.css';
 // new file import for use usestate hook
 //import SetCount from './components/SetCount';
 
-function useRefhook() {
+function App() {
 
   const userefs = useRef(null);
   function handleInput(){
     
       console.warn("use ref successfully run");
-      //userefs.current.value = 1000;
+      userefs.current.value = "amit baghel";
       //userefs.current.focus();
       //userefs.current.style.color="red";
       //userefs.current.style.display="none";
       //userefs.current.style.backgroundColor="red";
-    
-
-
-      
+       
     }
 
   return (

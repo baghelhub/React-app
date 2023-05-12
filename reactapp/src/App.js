@@ -1,41 +1,34 @@
 
-import { React } from 'react';
 import './App.css';
-
-//import About from './components/About';
-import Textform from './components/Textform';
-import Navbar from './components/Navbar';
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Help from './components/Help';
-
-// import About from './components/About';
-// import Textform from './components/Textform';
- import Navbar from './components/Navbar';
-
-// new file import for use usestate hook
+import Navbar from './components/navbar';
 //import SetCount from './components/SetCount';
-
+//import  Textform from './components/Textform';
+//import About  from './components/About';
+//import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+//import Home from './components/Home';
+//import Help from './components/Help';
 
 function App() {
-
-
   return (
     <>
-      <Navbar />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/Help" element={<Help />}></Route>
-        </Routes>
-      </BrowserRouter>
+    <Navbar />
+       {/* < Textform  text="This Text is use with the help Props" /> */}
+       {/* < SetCount /> */}
 
-      {/* < Textform head="Enter The Text Analyze" nextText="UseState Hook" /> */}
-      {/* < SetCount  /> */}
-      {/* <About /> */}
+      {/* <BrowserRouter>
+        <Navbar />
+        <div className='container'>
+          <Link to="/help" >Help Us Page</Link>
+          < br />
+          <Link to="/" >Home </Link>
+
+          <Routes>
+            <Route path="/" element={<Home />}></Route>
+            <Route path="/Help" element={<Help />}></Route>
+          </Routes>
+        </div>
+      </BrowserRouter> */}
     </>
   );
 }
-
 export default App;
