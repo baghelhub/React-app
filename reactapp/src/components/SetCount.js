@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 export default function Example() {
 
@@ -9,13 +9,6 @@ export default function Example() {
     setCount(count + 1)
   }
 
-  //use effect hook
-  useEffect(() => {
-
-
-    console.log('effect work successfully');
-
-  }, [count])
 
   return (
 

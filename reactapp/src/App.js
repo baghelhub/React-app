@@ -1,9 +1,10 @@
 
 import './App.css';
 import Navbar from './components/navbar';
+import CountrySelect from './components/countrySelect'
 //import SetCount from './components/SetCount';
 //import  Textform from './components/Textform';
-import About from './components/About';
+//import About from './components/About';
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 //import Home from './components/Home';
 //import Help from './components/Help';
@@ -14,9 +15,10 @@ function App() {
       
       <Navbar />
 
+      <CountrySelect />
       {/* < Textform  text="This Text is use with the help Props" /> */}
       {/* < SetCount /> */}
-      <About />
+      {/* <About /> */}
 
       {/* <BrowserRouter>
         <Navbar />
