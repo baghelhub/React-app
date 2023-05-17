@@ -1,6 +1,4 @@
 
-//we want use this file code in app.js 
-
 import { React, useRef } from 'react';
 import './App.css';
 // import About from './components/About';
@@ -9,7 +7,6 @@ import './App.css';
 //import SetCount from './components/SetCount';
 
 function App() {
-
   const userefs = useRef(null);
   function handleInput(){
     
@@ -24,13 +21,16 @@ function App() {
 
   return (
     <>
-     <h1>Check UseRef</h1>
-     <input type='text' ref={userefs} />
-     <button onClick={handleInput}>Handle Input</button>
+    <h3>Check UseRef</h3>
+     <textarea ref={userefs} /><br/>
+     {/*  add default value 
+     <textarea ref={userefs} value='tyme' /><br/> */}
+     <button className='btn btn-primary' onClick={handleInput}>Handle Input</button>
       {/* <Navbar /> */}
       {/* < Textform head="Enter The Text Analyze" nextText="UseState Hook" /> */}
       {/* < SetCount  /> */}
       {/* <About /> */}
+      
     </>
   );
 }

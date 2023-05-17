@@ -1,10 +1,15 @@
 
 import './App.css';
-import Navbar from './components/navbar';
-import Dharam from './components/dharam';
+
+/* use pages from page folder*********************************/ 
+import Home from './pages/home';
+
+/* use componet file */ 
+// import Navbar from './components/navbar';
+// import Textform from './components/textform';
+// import Dharam from './components/dharam';
 //import CountrySelect from './components/countrySelect'
 //import SetCount from './components/SetCount';
-// import Textform from './components/textform';
 //import About from './components/About';
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 //import Home from './components/Home';
@@ -13,9 +18,10 @@ function App() {
   return (
     <>
 
-      <Navbar />
-      <Dharam />
+     <Home />
+      {/* <Navbar /> */}
       {/* < Textform text="This Text is use with the help Props" /> */}
+      {/* <Dharam /> */}
 
       {/* <CountrySelect /> */}
       {/* < SetCount /> */}
