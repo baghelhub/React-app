@@ -1,22 +1,23 @@
 
 import './App.css';
 import Navbar from './components/navbar';
-import CountrySelect from './components/countrySelect'
+import Dharam from './components/dharam';
+//import CountrySelect from './components/countrySelect'
 //import SetCount from './components/SetCount';
-//import  Textform from './components/Textform';
+// import Textform from './components/textform';
 //import About from './components/About';
 //import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 //import Home from './components/Home';
 //import Help from './components/Help';
-
 function App() {
   return (
-      <>
-      
-      <Navbar />
+    <>
 
-      <CountrySelect />
-      {/* < Textform  text="This Text is use with the help Props" /> */}
+      <Navbar />
+      <Dharam />
+      {/* < Textform text="This Text is use with the help Props" /> */}
+
+      {/* <CountrySelect /> */}
       {/* < SetCount /> */}
       {/* <About /> */}
 

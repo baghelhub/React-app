@@ -37,7 +37,7 @@ export default function Textform(props) {
                     <h3> {props.nextText}</h3>
 
                     <div className='mb-3'>
-                        <textarea className='form-control' value={text} onChange={textonchaneg} id='myBox' bg-4 rows='8'></textarea>
+                    <textarea className='form-control' value={text} onChange={textonchaneg} id='myBox' bg-4 rows='8'></textarea>
                     </div>
                     <button className="btn btn-secondary mx-1" onClick={ChangeText}>New Text</button>
                     <button className="btn btn-success mx-1" onClick={touppercasetext}>Caps Text</button>
